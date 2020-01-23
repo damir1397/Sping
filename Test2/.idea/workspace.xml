@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f45fe4fd-2a31-4679-9ea5-45ece8fbe02f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Патоки/MainSync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Патоки/MainSync.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +30,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NeuralNetworks" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -45,13 +46,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FasadeApp">
-    <configuration name="AdapterPatern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Адаптер.AdapterPatern" />
+  <component name="RunManager" selected="Application.MainSync">
+    <configuration name="LifeForThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Патоки.LifeForThread" />
       <module name="Test2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Адаптер.*" />
+          <option name="PATTERN" value="Патоки.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +60,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Decorator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Декоратор.Decorator" />
+    <configuration name="MainSync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Патоки.MainSync" />
       <module name="Test2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Декоратор.*" />
+          <option name="PATTERN" value="Патоки.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FasadeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Фасад.FasadeApp" />
+    <configuration name="MyTheread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Патоки.MyTheread" />
       <module name="Test2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Фасад.*" />
+          <option name="PATTERN" value="Патоки.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,19 +86,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Patterns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Patterns" />
+    <configuration name="PriorityTheread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Патоки.PriorityTheread" />
       <module name="Test2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Патоки.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TheRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Патоки.TheRead" />
+      <module name="Test2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Патоки.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FasadeApp" />
-        <item itemvalue="Application.Decorator" />
-        <item itemvalue="Application.AdapterPatern" />
-        <item itemvalue="Application.Patterns" />
+        <item itemvalue="Application.MainSync" />
+        <item itemvalue="Application.PriorityTheread" />
+        <item itemvalue="Application.LifeForThread" />
+        <item itemvalue="Application.MyTheread" />
+        <item itemvalue="Application.TheRead" />
       </list>
     </recent_temporary>
   </component>
@@ -115,6 +136,9 @@
       <workItem from="1566540997506" duration="8612000" />
       <workItem from="1566797755044" duration="53000" />
       <workItem from="1566799733610" duration="1197000" />
+      <workItem from="1567067582372" duration="12428000" />
+      <workItem from="1567857983773" duration="37000" />
+      <workItem from="1571219386235" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="test1">
       <created>1566544212943</created>
@@ -151,7 +175,56 @@
       <option name="project" value="LOCAL" />
       <updated>1566548944458</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Theread1">
+      <created>1567070540005</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567070540005</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Theread2">
+      <created>1567071450852</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567071450852</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Theread2">
+      <created>1567071472133</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567071472133</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Theread2">
+      <created>1567071483265</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1567071483265</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Theread3">
+      <created>1567073165898</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1567073165898</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Theread.sleep()4">
+      <created>1567076016482</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1567076016482</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Theread.join()5">
+      <created>1567080683632</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1567080683632</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +247,12 @@
     <MESSAGE value="test1" />
     <MESSAGE value="test2" />
     <MESSAGE value="test3" />
-    <option name="LAST_COMMIT_MESSAGE" value="test3" />
+    <MESSAGE value="Theread1" />
+    <MESSAGE value="Theread2" />
+    <MESSAGE value="Theread3" />
+    <MESSAGE value="Theread.sleep()4" />
+    <MESSAGE value="Theread.join()5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Theread.join()5" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Test2$AdapterPatern.ic" NAME="AdapterPatern Coverage Results" MODIFIED="1566543962462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
