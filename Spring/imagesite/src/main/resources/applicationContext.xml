@@ -9,29 +9,5 @@
 
     <context:property-placeholder location="classpath:application.properties"/>
 
-    <bean id="rockMusic"
-          class="kg.damir.imagesite.RocklMusic">
-    </bean>
-    <bean id="classicMusic"
-          class="kg.damir.imagesite.ClassicalMusic">
-    </bean>
-    <bean id="hip_hopMusic"
-          class="kg.damir.imagesite.HipHopMusic">
-    </bean>
-    <!-- получил значение с вставив id в конструктор    -->
-    <bean id="musicPlayer" class="kg.damir.imagesite.MusicPlayer">
-
-        <!-- конструктор принимающий значения Music         -->
-        <property name="name" value="${musicPlayer.name}"/>
-        <property name="phone" value="${musicPlayer.phone}"/>
-
-        <property name="listMusic">
-            <list value-type="kg.damir.imagesite.Music">
-                <ref bean="rockMusic"/>
-                <ref bean="classicMusic"/>
-                <ref bean="hip_hopMusic"/>
-            </list>
-        </property>
-    </bean>
 
 </beans>
