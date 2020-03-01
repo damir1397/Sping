@@ -1,6 +1,18 @@
 <body>
-
-<div> Hello  {{damir}} </div>//тут оказывается по ключу находит из за этого ошибка была
-
+<div>
+<form method="post">
+    <input type="text" name="text" placeholder="Ведите сообщение">
+    <input type="text" name="tag" placeholder="Ведите сообщение">
+    <button type="submit">Добавить</button>
+</form>
+</div>
+<div> Список сообщений</div>
+{{#repo}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{text}}</span>
+        <i>{{tag}}</i>
+    </div>
+{{/repo}}repo}}
 </body>
 </html>
