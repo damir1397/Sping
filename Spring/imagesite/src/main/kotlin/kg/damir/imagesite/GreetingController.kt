@@ -2,6 +2,7 @@ package kg.damir.imagesite
 
 import kg.damir.imagesite.domain.Message
 import kg.damir.imagesite.repos.MessageRepo
+import org.hibernate.mapping.Collection
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
@@ -16,7 +17,7 @@ class GreetingController {
         model["name"] = name
         return "greeting"
     }
-lateinit var messageRepo: MessageRepo
+private lateinit var messageRepo: MessageRepo
     @GetMapping
     fun index(model: MutableMap<String, String>): String {
         var message:Iterable<Message> = messageRepo.findAll()
@@ -24,11 +25,11 @@ lateinit var messageRepo: MessageRepo
         return "index"
     }
     @PostMapping
-    fun add(@RequestParam text:String,@RequestParam tag:String,model:MutableMap<String,Iterable<Message>>):String{
+    fun add(@RequestParam text:String,@RequestParam tag:String,model:MutableMap<String,MutableIterable<Message>>):String{
         val messageConstructor =Message(text,tag)
         messageRepo.save(messageConstructor)
-        val messages:Iterable<Message> = messageRepo.findAll()
-        model.put("messages",messages)
+        val messages:MutableIterable<Message> = messageRepo.findAll()
+        model["messages"] = messages
         return "index"
     }
 }

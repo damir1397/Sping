@@ -5,9 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 
 
 @SpringBootApplication
-open class ServingWebContentApplication
+private open class ServingWebContentApplication
     fun main(args: Array<String>) {
         SpringApplication.run(ServingWebContentApplication::class.java, *args)
-
     }
 
