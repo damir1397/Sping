@@ -1,16 +1,21 @@
 package kg.damir.sweater.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "Post")
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "_id")
     private Long id;
-    private String title, anons, fulltext;
+    @Column(name = "_title")
+    private String title;
+    @Column(name = "_anons")
+    private String anons;
+    @Column(name = "_fulltext")
+    private String fulltext;
+    @Column(name = "_views")
     private int views;
 
     public Long getId() {
