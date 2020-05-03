@@ -13,7 +13,14 @@
     <h1>Блог сайта </h1>
 </div>
 
-<div th:insert="blocks/footer :: footer"></div>
+<div th:insert="blocks/footer :: footer" class="alert alert-info mt-2">
+</div>
+<div th:each="el:${posts}">
+    <H3 th:text="${el.title}"></H3>
+    <p th:text="${el.anons}"></p>
+    <a th:href="'/blog/'+${el.id}">Детальнее</a>
+
+</div>
 
 </body>
 </html>
