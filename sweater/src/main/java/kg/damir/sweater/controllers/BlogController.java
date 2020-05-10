@@ -39,18 +39,23 @@ public class BlogController {
     }
     @GetMapping("/blog/{id}")
     public String blogDetails(@PathVariable(value = "id") long id, Model model) {
+        if (!postRepository.existsById(id)){
+            return "redirect:/blog";
+        }
         Optional<Post> post= postRepository.findById(id);
+        System.out.println(post);
         ArrayList<Post> res=new ArrayList<>();
         post.ifPresent(res::add);
         model.addAttribute("post",res );
+        System.out.println(model);
         return "blog-details";
     }
 
-    @GetMapping("/blog/{id}")
+    @GetMapping("/blog/{id}/remove")
     public String blogRemove(Model model) {
         return "blog-remove";
     }
-    @GetMapping("/blog/{id}")
+    @GetMapping("/blog/{id}/edit")
     public String blogEdit(Model model) {
         return "blog-edit";
     }
